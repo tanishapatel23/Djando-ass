@@ -1,6 +1,4 @@
-# Save the refined README content into a file named README.md
 
-readme_content = """
 # 🧠 Habit Builder – Week 2 Challenge
 
 A Django web application that allows users to build positive habits by tracking their daily progress. This project emphasizes core web development skills, including user authentication, form handling, and database interaction using Django's powerful framework.
@@ -60,3 +58,45 @@ The goal is to deliver a working prototype using only Week 2 concepts and tools.
 ```bash
 git clone https://github.com/tanishapatel23/react-js-final-ass.git
 cd react-js-final-ass
+```
+
+### 2. Create and Activate a Virtual Environment
+
+```bash
+python -m venv venv
+source venv/bin/activate        # Windows: venv\Scripts\activate
+```
+
+### 3. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+> If `requirements.txt` doesn’t exist, you can create it:
+> ```bash
+> pip freeze > requirements.txt
+> ```
+
+### 4. Run Migrations
+
+```bash
+python manage.py makemigrations
+python manage.py migrate
+```
+
+### 5. Create a Superuser
+
+```bash
+python manage.py createsuperuser
+```
+
+Follow the prompts to enter your username, email, and password.
+
+### 6. Start the Development Server
+
+```bash
+python manage.py runserver
+```
+
+Visit the app at: [http://127.0.0.1:8000](http://127.0.0.1:8000)
